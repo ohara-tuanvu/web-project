@@ -1,0 +1,388 @@
+/* ===========================
+   全体設定（GLOBAL）
+=========================== */
+body {
+    margin: 0;
+    background: #111;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+
+/* ===========================
+   ヘッダー
+=========================== */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #000;
+    border-bottom: 2px solid #c40000;
+}
+
+.logo img {
+    height: 45px;
+}
+
+.header-tagline {
+    font-family: 'Yuji Syuku', serif;
+    font-size: 22px;
+    letter-spacing: 4px;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav ul li a.active {
+    color: #c40000;
+}
+
+/* ===========================
+   フォームコンテナ（プレミアム）
+=========================== */
+.reserve-container {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 35px;
+    background: #0d0d0d;
+    border: 1px solid rgba(196,0,0,0.6);
+    border-radius: 14px;
+    box-shadow: 0 0 25px rgba(255,0,0,0.25);
+    position: relative;
+    overflow: hidden;
+}
+
+/* 赤い煙エフェクト */
+.reserve-container::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(255,0,0,0.25), transparent 70%);
+    animation: smoke 6s infinite ease-in-out;
+}
+
+@keyframes smoke {
+    0% { transform: translate(0,0); opacity: 0.4; }
+    50% { transform: translate(40px,20px); opacity: 0.2; }
+    100% { transform: translate(0,0); opacity: 0.4; }
+}
+
+.reserve-container h1 {
+    text-align: center;
+    font-family: 'Yuji Syuku', serif;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #fff;
+}
+
+/* ===========================
+   ラベルとアイコン
+=========================== */
+.reserve-container label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 18px 0 6px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    opacity: 0;
+    animation: fadeUp 0.6s ease forwards;
+}
+
+.reserve-container label::before {
+    content: "•";
+    color: #c40000;
+    font-size: 20px;
+}
+
+/* ===========================
+   入力欄（プレミアム）
+=========================== */
+.reserve-container input,
+.reserve-container textarea {
+    width: 100%;
+    padding: 14px;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transition: 0.25s ease;
+    opacity: 0;
+    animation: fadeUp 0.6s ease forwards;
+}
+
+.reserve-container input:hover,
+.reserve-container textarea:hover {
+    box-shadow: 0 0 12px rgba(255,0,0,0.25);
+}
+
+.reserve-container input:focus,
+.reserve-container textarea:focus {
+    border-color: #c40000;
+    box-shadow: 0 0 10px rgba(255,0,0,0.35);
+    outline: none;
+}
+
+/* ===========================
+   ボタン（和風プレミアム）
+=========================== */
+.reserve-btn {
+    width: 100%;
+    margin-top: 30px;
+    padding: 16px;
+    background: linear-gradient(90deg, #b00000, #e00000);
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 22px;
+    font-family: 'Yuji Syuku', serif;
+    letter-spacing: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0 12px rgba(255,0,0,0.4);
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+    animation: fadeUp 0.6s ease forwards;
+}
+
+/* ライトの流れるエフェクト */
+.reserve-btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255,255,255,0.4), transparent);
+    transform: skewX(-20deg);
+    animation: shine 2.5s infinite;
+}
+
+@keyframes shine {
+    0% { left: -100%; }
+    60% { left: 120%; }
+    100% { left: 120%; }
+}
+
+.reserve-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 18px rgba(255,0,0,0.6);
+}
+
+/* ===========================
+   ポップアップ
+=========================== */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.75);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-box {
+    background: #111;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #c40000;
+    text-align: center;
+    width: 80%;
+    max-width: 350px;
+    box-shadow: 0 0 20px rgba(255,0,0,0.4);
+    animation: popupShow 0.35s ease;
+}
+
+@keyframes popupShow {
+    0% { transform: scale(0.8); opacity: 0; }
+    60% { transform: scale(1.05); opacity: 1; }
+    100% { transform: scale(1); }
+}
+
+/* ===========================
+   フェードアップアニメーション
+=========================== */
+@keyframes fadeUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* 遅延設定 */
+label:nth-of-type(1), input:nth-of-type(1) { animation-delay: 0.1s; }
+label:nth-of-type(2), input:nth-of-type(2) { animation-delay: 0.2s; }
+label:nth-of-type(3), input:nth-of-type(3) { animation-delay: 0.3s; }
+label:nth-of-type(4), input:nth-of-type(4) { animation-delay: 0.4s; }
+label:nth-of-type(5), textarea { animation-delay: 0.5s; }
+.reserve-btn { animation-delay: 0.6s; }
+
+/* ===========================
+   背景（和風プレミアム）
+=========================== */
+body {
+    background: url("images/bgr.jpg") center/cover no-repeat fixed;
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* 暗いレイヤーでフォームを強調 */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.55),
+        rgba(0, 0, 0, 0.75)
+    );
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* ノイズレイヤー（無効化） */
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: none;
+    opacity: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* ===========================
+   予約ページ（モバイル）
+=========================== */
+@media (max-width: 768px) {
+
+    /* 全体縮小＋中央寄せ */
+    body {
+        transform: scale(0.80);
+        transform-origin: top center;
+        width: 130%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    /* フォームコンテナ */
+    .reserve-container {
+        width: 85%;
+        margin: 20px auto;
+        padding: 12px 10px;
+
+        background: #111;
+        border-radius: 10px;
+        border: 1px solid #333;
+    }
+
+    /* タイトル */
+    .reserve-container h1 {
+        font-size: 20px;
+        text-align: center;
+        letter-spacing: 3px;
+        margin-bottom: 12px;
+        color: #c40000;
+    }
+
+    /* ラベル */
+    .reserve-container label {
+        font-size: 12px;
+        margin-bottom: 3px;
+        display: block;
+        color: #ddd;
+    }
+
+    /* 入力欄 */
+    .reserve-container input,
+    .reserve-container textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+
+        background: #1a1a1a;
+        border: 1px solid #333;
+        border-radius: 6px;
+
+        font-size: 13px;
+        color: white;
+    }
+
+    .reserve-container textarea {
+        height: 80px;
+        resize: none;
+    }
+
+    /* ボタン */
+    .reserve-btn {
+        width: 100%;
+        padding: 10px;
+        font-size: 15px;
+
+        background: #c40000;
+        color: white;
+        border: none;
+        border-radius: 8px;
+
+        letter-spacing: 1px;
+        margin-top: 5px;
+    }
+
+    .reserve-btn:active {
+        background: #a00000;
+    }
+
+    /* ===========================
+       ポップアップ
+    ============================ */
+    .popup-box {
+        width: 80%;
+        padding: 16px;
+        border-radius: 10px;
+
+        background: #111;
+        border: 1px solid #333;
+        text-align: center;
+    }
+
+    .popup-box h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: #c40000;
+    }
+
+    .popup-box p {
+        font-size: 13px;
+        margin-bottom: 15px;
+        color: #ddd;
+    }
+
+    .popup-box button {
+        width: 100%;
+        padding: 12px;
+        font-size: 15px;
+
+        background: #c40000;
+        color: white;
+        border: none;
+        border-radius: 8px;
+    }
+}

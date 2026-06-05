@@ -1,0 +1,693 @@
+[
+  {
+    "name": "レバテキ",
+    "price": 580,
+    "desc": "新鮮な豚レバーを軽く炙り、ねぎと生姜で仕上げた一品。",
+    "image": "images/reba.jpg",
+    "category": "ippin"
+  },
+  {
+    "name": "シロ串",
+    "price": 160,
+    "desc": "豚の大腸を香ばしく焼き上げた、もつ焼き定番の串。",
+    "image": "images/shiro.jpg",
+    "category": "yaki"
+  },
+  {
+    "name": "カシラ串",
+    "price": 180,
+    "desc": "豚のこめかみ部分を使用した、旨味たっぷりの串焼き。",
+    "image": "images/kashira.jpg",
+    "category": "yaki"
+  },
+  {
+    "name": "タン串",
+    "price": 200,
+    "desc": "豚タンを塩でシンプルに味付けし、レモンでさっぱり。",
+    "image": "images/tan.jpg",
+    "category": "yaki"
+  },
+  {
+    "name": "ハツ串",
+    "price": 160,
+    "desc": "豚ハツのコリコリ食感が楽しめる人気の串焼き。",
+    "image": "images/hatsu.jpg",
+    "category": "yaki"
+  },
+  {
+    "name": "ナンコツ串",
+    "price": 180,
+    "desc": "鶏なんこつを香ばしく焼き上げた、食感が楽しい一品。",
+    "image": "images/buta.jpg",
+    "category": "yaki"
+  },
+
+  {
+    "name": "豚キムチ炒め",
+    "price": 680,
+    "desc": "豚肉とキムチを強火で炒めた、ピリ辛のおつまみ。",
+    "image": "images/butakimchi.jpg",
+    "category": "itame"
+  },
+  {
+    "name": "ホルモン炒め",
+    "price": 720,
+    "desc": "ホルモンを甘辛ダレで炒めた、ビールに合う一品。",
+    "image": "images/horumon.jpg",
+    "category": "itame"
+  },
+  {
+    "name": "チャーハン",
+    "price": 650,
+    "desc": "香ばしく炒めたご飯に卵と野菜を加えた、シンプルで飽きない味。",
+    "image": "images/cyahan.jpg",
+    "category": "itame"
+  },
+  {
+    "name": "焼きそば",
+    "price": 700,
+    "desc": "ソースの香りが食欲をそそる、定番の焼きそば。",
+    "image": "images/soba.jpg",
+    "category": "itame"
+  },
+
+  {
+    "name": "もつ煮込み",
+    "price": 580,
+    "desc": "味噌ベースでじっくり煮込んだ、居酒屋定番のもつ煮。",
+    "image": "images/motsuni.jpg",
+    "category": "ippin"
+  },
+  {
+    "name": "ポテサラ",
+    "price": 420,
+    "desc": "家庭的な味わいのポテトサラダ。おつまみに最適。",
+    "image": "images/ps.jpg",
+    "category": "ippin"
+  },
+  {
+    "name": "冷やしトマト",
+    "price": 380,
+    "desc": "冷たく冷やしたトマトをシンプルに塩でいただく一品。",
+    "image": "images/tomato.jpg",
+    "category": "ippin"
+  },
+  {
+    "name": "厚揚げ焼き",
+    "price": 450,
+    "desc": "外はカリッと中はふわっとした厚揚げを香ばしく焼き上げました。",
+    "image": "images/dau.jpg",
+    "category": "agemono"
+  },
+  {
+    "name": "揚げ出し豆腐",
+    "price": 520,
+    "desc": "出汁の旨味が染み込んだ、熱々の揚げ出し豆腐。",
+    "image": "images/dau2.jpg",
+    "category": "agemono"
+  },
+  {
+    "name": "牛すじ煮込み",
+    "price": 780,
+    "desc": "とろとろになるまで煮込んだ牛すじに、味噌の旨味が染み込んだ一品。",
+    "image": "images/gyusuzi.jpg",
+    "category": "ippin"
+  },
+  {
+    "name": "おにぎり（鮭）",
+    "price": 260,
+    "desc": "鮭の旨味が詰まったシンプルなおにぎり。",
+    "image": "images/onigiri.jpg",
+    "category": "ippin"
+  },
+  {
+    "name": "味噌汁",
+    "price": 150,
+    "desc": "優しい味わいの味噌汁。締めにぴったり。",
+    "image": "images/miso.jpg",
+    "category": "ippin"
+  },
+  {
+    "name": "ハラミ串",
+    "price": 220,
+    "desc": "ジューシーで旨味の強い豚はらみを香ばしく焼き上げました。",
+    "image": "images/harami.jpg",
+    "category": "yaki"
+  },
+  {
+    "name": "とろたん串",
+    "price": 260,
+    "desc": "とろけるような食感の豚タンを塩でシンプルに仕上げた一串。",
+    "image": "images/torotan.jpg",
+    "category": "yaki"
+  },
+  {
+    "name": "レバー串",
+    "price": 180,
+    "desc": "鮮度の良い豚レバーを香ばしく焼き、濃厚な旨味を楽しめます。",
+    "image": "images/rebayaki.jpg",
+    "category": "yaki"
+  },
+  {
+    "name": "シロコロ串",
+    "price": 200,
+    "desc": "ぷりぷり食感の豚ホルモンをカリッと焼き上げた人気の一品。塩、たれ、生わさび、山椒たれ",
+    "image": "images/shirokoro.jpg",
+    "category": "yaki"
+  },
+  {
+    "name": "つくね串",
+    "price": 220,
+    "desc": "ふっくらジューシーな鶏つくねを甘辛ダレで香ばしく焼きました。",
+    "image": "images/tsukune.jpg",
+    "category": "yaki"
+  },
+  {
+    "name": "ねぎま串",
+    "price": 200,
+    "desc": "鶏もも肉とねぎを交互に刺し、炭火で香ばしく焼き上げた定番串。",
+    "image": "images/negima.jpg",
+    "category": "yaki"
+  },
+  {
+    "name": "手羽串",
+    "price": 240,
+    "desc": "皮はパリッと、中はジューシーに焼き上げた手羽先。",
+    "image": "images/teba.jpg",
+    "category": "yaki"
+  },
+  {
+    "name": "せせり串",
+    "price": 200,
+    "desc": "弾力のある鶏せせりを塩でシンプルに焼き、旨味を引き立てました。",
+    "image": "images/seseri.jpg",
+    "category": "yaki"
+  },
+  {
+    "name": "皮串",
+    "price": 160,
+    "desc": "カリッと香ばしく焼いた鶏皮。お酒が進む一串。",
+    "image": "images/kawa.jpg",
+    "category": "yaki"
+  },
+  {
+    "name": "ぼんじり串",
+    "price": 180,
+    "desc": "脂の旨味が詰まったぼんじりを香ばしく焼き上げました。",
+    "image": "images/bonziri.jpg",
+    "category": "yaki"
+  },
+  {
+    "name": "やげんなんこつ串",
+    "price": 200,
+    "desc": "コリコリ食感がクセになる鶏やげんなんこつの塩焼き。",
+    "image": "images/yagen.jpg",
+    "category": "yaki"
+  },
+  {
+    "name": "砂肝串",
+    "price": 180,
+    "desc": "シャキッとした食感が魅力の砂肝を塩でシンプルに焼きました。",
+    "image": "images/sunagimo.jpg",
+    "category": "yaki"
+  },
+
+  {
+    "name": "鉄板餃子",
+    "price": 520,
+    "desc": "熱々の鉄板で焼き上げたジューシーな餃子。ビールとの相性抜群。",
+    "image": "images/teppan_gyoza.jpg",
+    "category": "itame"
+  },
+  {
+    "name": "トマトチーズ焼き",
+    "price": 580,
+    "desc": "とろけるチーズと甘酸っぱいトマトを鉄板で香ばしく焼いた一品。",
+    "image": "images/tomato_cheese.jpg",
+    "category": "itame"
+  },
+  {
+    "name": "明太ポテトチーズ焼き",
+    "price": 620,
+    "desc": "明太子とポテトにチーズをのせて焼き上げた濃厚な人気メニュー。",
+    "image": "images/mentai_potato.jpg",
+    "category": "itame"
+  },
+  {
+    "name": "だし巻き卵",
+    "price": 480,
+    "desc": "ふわふわ食感のだし巻き卵。優しい味わいでおつまみに最適。",
+    "image": "images/dashimaki.jpg",
+    "category": "itame"
+  },
+  {
+    "name": "明太だし巻き卵",
+    "price": 580,
+    "desc": "ふわふわのだし巻き卵に明太子を加えた贅沢な一品。",
+    "image": "images/mentai_dashimaki.jpg",
+    "category": "itame"
+  },
+  {
+    "name": "焼うどん",
+    "price": 700,
+    "desc": "ソースの香りが食欲をそそる、定番の焼うどん。",
+    "image": "images/yakiudon.jpg",
+    "category": "itame"
+  },
+  {
+    "name": "豚骨ラーメン",
+    "price": 780,
+    "desc": "濃厚な豚骨スープがクセになる、締めにもぴったりの一杯。",
+    "image": "images/tonkotsu_ramen.jpg",
+    "category": "itame"
+  },
+  {
+    "name": "小籠包",
+    "price": 520,
+    "desc": "肉汁たっぷりの小籠包を熱々で提供します。",
+    "image": "images/soronbo.jpg",
+    "category": "itame"
+  },
+  {
+    "name": "とろろチーズ焼き",
+    "price": 580,
+    "desc": "とろろとチーズを鉄板でとろっと仕上げた、まろやかな一品。",
+    "image": "images/tororo_cheese.jpg",
+    "category": "itame"
+  },
+  {
+    "name": "コーンバター",
+    "price": 520,
+    "desc": "香ばしく焼いたコーンにバターをたっぷり絡めた鉄板定番メニュー。",
+    "image": "images/corn_butter.jpg",
+    "category": "itame"
+  },
+
+  {
+    "name": "きゅうり一本漬け",
+    "price": 350,
+    "desc": "パリッとした食感のきゅうりを一本丸ごと浅漬け風に仕上げました。",
+    "image": "images/kyuri_ippon.jpg",
+    "category": "ippin"
+  },
+  {
+    "name": "山芋たんざく",
+    "price": 420,
+    "desc": "シャキシャキ食感の山芋をさっぱりとした味付けで提供します。",
+    "image": "images/yamaimo_tanzaku.jpg",
+    "category": "ippin"
+  },
+  {
+    "name": "鳥から揚げ",
+    "price": 580,
+    "desc": "外はカリッと中はジューシーな定番の鶏から揚げ。",
+    "image": "images/tori_karaage.jpg",
+    "category": "agemono"
+  },
+  {
+    "name": "ウマから揚げ（10個入り）",
+    "price": 780,
+    "desc": "旨味たっぷりの鶏から揚げを10個盛りでボリューム満点。",
+    "image": "images/uma_karaage.jpg",
+    "category": "agemono"
+  },
+  {
+    "name": "じゃがバター",
+    "price": 420,
+    "desc": "ホクホクのじゃがいもにバターをのせたシンプルな一品。",
+    "image": "images/jaga_butter.jpg",
+    "category": "ippin"
+  },
+  {
+    "name": "ガッツポン酢",
+    "price": 480,
+    "desc": "さっぱりとしたポン酢で仕上げたガツの定番おつまみ。",
+    "image": "images/gatsu_ponzu.jpg",
+    "category": "ippin"
+  },
+  {
+    "name": "浅漬け",
+    "price": 350,
+    "desc": "さっぱりとした味わいの自家製浅漬け盛り合わせ。",
+    "image": "images/asazuke.jpg",
+    "category": "ippin"
+  },
+  {
+    "name": "もやしナムル",
+    "price": 320,
+    "desc": "シャキシャキ食感のもやしをナムル風に味付けした一品。",
+    "image": "images/moyashi_namuru.jpg",
+    "category": "ippin"
+  },
+  {
+    "name": "マグロぶつ",
+    "price": 680,
+    "desc": "新鮮なマグロをぶつ切りにした、シンプルで旨味のある一品。",
+    "image": "images/maguro_butsu.jpg",
+    "category": "ippin"
+  },
+  {
+    "name": "マグロユッケ",
+    "price": 720,
+    "desc": "特製ダレで和えたマグロユッケ。お酒が進む人気メニュー。",
+    "image": "images/maguro_yukke.jpg",
+    "category": "ippin"
+  },
+  {
+    "name": "かつおたたき",
+    "price": 750,
+    "desc": "香ばしく炙ったかつおをポン酢でさっぱりと仕上げた一品。",
+    "image": "images/katsuo_tataki.jpg",
+    "category": "ippin"
+  },
+  {
+    "name": "馬刺し",
+    "price": 880,
+    "desc": "新鮮な馬刺しを特製醤油と生姜でさっぱりといただく一品。",
+    "image": "images/basashi.jpg",
+    "category": "ippin"
+  },
+  {
+    "name": "タコ唐揚げ",
+    "price": 580,
+    "desc": "プリッとしたタコをカリッと揚げた、お酒が進む定番おつまみ。",
+    "image": "images/tako_karaage.jpg",
+    "category": "agemono"
+  },
+  {
+    "name": "ポテトフライ",
+    "price": 450,
+    "desc": "外はカリッと中はホクホクの定番フライドポテト。",
+    "image": "images/potato_fry.jpg",
+    "category": "agemono"
+  },
+  {
+    "name": "ハムカツ",
+    "price": 480,
+    "desc": "サクサク衣のハムカツ。昔懐かしい味わいの人気メニュー。",
+    "image": "images/ham_katsu.jpg",
+    "category": "agemono"
+  },
+  {
+    "name": "コロッケ",
+    "price": 380,
+    "desc": "ホクホクのじゃがいもを使ったシンプルで優しい味のコロッケ。",
+    "image": "images/croquette.jpg",
+    "category": "agemono"
+  },
+  {
+    "name": "牛すじ",
+    "price": 680,
+    "desc": "じっくり煮込んだ牛すじを特製ダレで仕上げた旨味たっぷりの一品。",
+    "image": "images/gyusuzi.jpg",
+    "category": "ippin"
+  },
+  {
+    "name": "鳥軟骨 唐揚げ",
+  "price": 580,
+  "desc": "コリコリ食感の鶏なんこつをカリッと揚げた、お酒が進む一品。",
+  "image": "images/tori_nankotsu_karaage.jpg",
+  "category": "agemono"
+  },
+  {
+    "name": "生ビール（中）",
+    "price": 550,
+    "desc": "定番の生ビール。まずはこれで乾杯！",
+    "image": "images/beer_nama.jpg",
+    "category": "drink"
+  },
+  {
+    "name": "瓶ビール",
+    "price": 600,
+    "desc": "キリン・アサヒなどの定番瓶ビール。",
+    "image": "images/beer_bin.jpg",
+    "category": "drink"
+  },
+  {
+    "name": "ハイボール",
+    "price": 480,
+    "desc": "すっきり飲みやすい定番ハイボール。",
+    "image": "images/highball.jpg",
+    "category": "drink"
+  },
+  {
+    "name": "濃いめハイボール",
+    "price": 550,
+    "desc": "ウイスキー多めのしっかり味ハイボール。",
+    "image": "images/highball_strong.jpg",
+    "category": "drink"
+  },
+  {
+    "name": "レモンサワー",
+    "price": 480,
+    "desc": "爽やかな酸味が人気のレモンサワー。",
+    "image": "images/lemon_sour.jpg",
+    "category": "drink"
+  },
+  {
+    "name": "濃いめレモンサワー",
+    "price": 550,
+    "desc": "レモン感強めの人気メニュー。",
+    "image": "images/lemon_sour_strong.jpg",
+    "category": "drink"
+  },
+  {
+    "name": "グレープフルーツサワー",
+    "price": 480,
+    "desc": "さっぱりとしたグレープフルーツの香り。",
+    "image": "images/grapefruit_sour.jpg",
+    "category": "drink"
+  },
+  {
+    "name": "梅サワー",
+    "price": 480,
+    "desc": "甘酸っぱい梅の風味が楽しめる一杯。",
+    "image": "images/ume_sour.jpg",
+    "category": "drink"
+  },
+  {
+    "name": "緑茶ハイ",
+    "price": 450,
+    "desc": "すっきり飲める緑茶割り。",
+    "image": "images/ryokucha_high.jpg",
+    "category": "drink"
+  },
+  {
+    "name": "ウーロンハイ",
+    "price": 450,
+    "desc": "定番のウーロン茶割り。",
+    "image": "images/oolong_high.jpg",
+    "category": "drink"
+  },
+  {
+    "name": "カルピスサワー",
+    "price": 480,
+    "desc": "甘くて飲みやすいカルピス割り。",
+    "image": "images/calpis_sour.jpg",
+    "category": "drink"
+  },
+  {
+    "name": "日本酒（一合）",
+    "price": 550,
+    "desc": "香り豊かな日本酒を熱燗・冷でどうぞ。",
+    "image": "images/nihonshu.jpg",
+    "category": "drink"
+  },
+  {
+    "name": "冷酒（グラス）",
+    "price": 650,
+    "desc": "キリッと冷えた日本酒。",
+    "image": "images/reishu.jpg",
+    "category": "drink"
+  },
+  {
+    "name": "焼酎（ロック）",
+    "price": 500,
+    "desc": "芋・麦から選べる焼酎ロック。",
+    "image": "images/shochu_rock.jpg",
+    "category": "drink"
+  },
+  {
+    "name": "焼酎（水割り）",
+    "price": 480,
+    "desc": "飲みやすい焼酎の水割り。",
+    "image": "images/shochu_mizuwari.jpg",
+    "category": "drink"
+  },
+  {
+    "name": "梅酒ロック",
+    "price": 480,
+    "desc": "甘酸っぱい梅酒をロックで。",
+    "image": "images/umeshu_rock.jpg",
+    "category": "drink"
+  },
+  {
+    "name": "カシスオレンジ",
+    "price": 520,
+    "desc": "甘くて飲みやすいカクテル。",
+    "image": "images/cassis_orange.jpg",
+    "category": "drink"
+  },
+  {
+    "name": "カシスウーロン",
+    "price": 520,
+    "desc": "さっぱり飲めるカシスの定番割り。",
+    "image": "images/cassis_oolong.jpg",
+    "category": "drink"
+  },
+  {
+    "name": "コーラ",
+    "price": 250,
+    "desc": "定番のソフトドリンク。",
+    "image": "images/cola.jpg",
+    "category": "drink"
+  },
+  {
+    "name": "ジンジャーエール",
+    "price": 250,
+    "desc": "すっきりとした辛口ジンジャー。",
+    "image": "images/ginger_ale.jpg",
+    "category": "drink"
+  },
+  {
+    "name": "ジンジャーハイボール",
+    "price": 500,
+    "desc": "ウイスキーとジンジャーの香りが相性抜群のハイボール。",
+    "image": "images/ginger_highball.jpg",
+    "category": "drink"
+  },
+  {
+    "name": "コークハイボール",
+    "price": 500,
+    "desc": "コーラの甘さが飲みやすい人気のハイボール。",
+    "image": "images/coke_highball.jpg",
+    "category": "drink"
+  },
+  {
+    "name": "ゆずサワー",
+    "price": 480,
+    "desc": "爽やかなゆずの香りが広がる一杯。",
+    "image": "images/yuzu_sour.jpg",
+    "category": "drink"
+  },
+  {
+    "name": "巨峰サワー",
+    "price": 480,
+    "desc": "甘くて飲みやすい巨峰サワー。",
+    "image": "images/kyohou_sour.jpg",
+    "category": "drink"
+  },
+  {
+    "name": "白桃サワー",
+    "price": 480,
+    "desc": "白桃の甘みが広がるフルーティーな一杯。",
+    "image": "images/peach_sour.jpg",
+    "category": "drink"
+  },
+  {
+    "name": "ライムサワー",
+    "price": 480,
+    "desc": "キリッとしたライムの酸味が爽快。",
+    "image": "images/lime_sour.jpg",
+    "category": "drink"
+  },
+  {
+    "name": "カルピスハイ",
+    "price": 450,
+    "desc": "カルピスの甘さが優しい飲み口。",
+    "image": "images/calpis_high.jpg",
+    "category": "drink"
+  },
+  {
+    "name": "緑茶割り（濃いめ）",
+    "price": 480,
+    "desc": "緑茶の風味をしっかり感じる濃いめの一杯。",
+    "image": "images/ryokucha_strong.jpg",
+    "category": "drink"
+  },
+  {
+    "name": "ほうじ茶ハイ",
+    "price": 450,
+    "desc": "香ばしいほうじ茶で割った和風ハイ。",
+    "image": "images/houjicha_high.jpg",
+    "category": "drink"
+  },
+  {
+    "name": "黒ウーロンハイ",
+    "price": 500,
+    "desc": "脂っこい料理に合う黒ウーロン割り。",
+    "image": "images/black_oolong_high.jpg",
+    "category": "drink"
+  },
+  {
+    "name": "カシスソーダ",
+    "price": 520,
+    "desc": "爽やかな炭酸とカシスの甘みが絶妙。",
+    "image": "images/cassis_soda.jpg",
+    "category": "drink"
+  },
+  {
+    "name": "ファジーネーブル",
+    "price": 520,
+    "desc": "ピーチとオレンジの甘くて飲みやすいカクテル。",
+    "image": "images/fuzzy_navel.jpg",
+    "category": "drink"
+  },
+  {
+    "name": "スクリュードライバー",
+    "price": 520,
+    "desc": "ウォッカとオレンジの定番カクテル。",
+    "image": "images/screwdriver.jpg",
+    "category": "drink"
+  },
+  {
+    "name": "レッドアイ",
+    "price": 550,
+    "desc": "ビールとトマトジュースのさっぱりカクテル。",
+    "image": "images/red_eye.jpg",
+    "category": "drink"
+  },
+  {
+    "name": "ホッピー（白）",
+    "price": 480,
+    "desc": "焼酎割りの定番ホッピー白。※瓶ではなく店内提供用。",
+    "image": "images/hoppy_white.jpg",
+    "category": "drink"
+  },
+  {
+    "name": "ホッピー（黒）",
+    "price": 480,
+    "desc": "香ばしい黒ホッピーの焼酎割り。",
+    "image": "images/hoppy_black.jpg",
+    "category": "drink"
+  },
+  {
+    "name": "熱燗（二合）",
+    "price": 900,
+    "desc": "寒い日にぴったりの熱燗。香り豊か。",
+    "image": "images/atsukan.jpg",
+    "category": "drink"
+  },
+  {
+    "name": "芋焼酎ソーダ割り",
+    "price": 500,
+    "desc": "芋の香りを爽やかに楽しめるソーダ割り。",
+    "image": "images/imo_soda.jpg",
+    "category": "drink"
+  },
+  {
+    "name": "麦焼酎ソーダ割り",
+    "price": 500,
+    "desc": "すっきり飲める麦焼酎のソーダ割り。",
+    "image": "images/mugi_soda.jpg",
+    "category": "drink"
+  },
+  {
+    "name": "ジンジャーミルク",
+    "price": 300,
+    "desc": "ノンアルの甘くて優しいドリンク。",
+    "image": "images/ginger_milk.jpg",
+    "category": "drink"
+  }
+  
+]

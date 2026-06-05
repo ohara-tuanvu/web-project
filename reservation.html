@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>予約 – 角吉梅島店</title>
+
+    <!-- スタイルシート -->
+    <link rel="stylesheet" href="reservation.css">
+    <link rel="stylesheet" href="mobile.css" media="only screen and (max-width: 768px)">
+    <link href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap" rel="stylesheet">
+
+    <!-- Flatpickr（カレンダー） -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <!-- Flatpickr 日本語設定 -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ja.js"></script>
+</head>
+
+<body>
+
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="logo"><img src="images/logo.jpg"></div>
+        <div class="header-tagline">もつ焼</div>
+        <div class="menu-toggle">☰</div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="menu.html">メーニュ</a></li>
+                <li><a href="reservation.html" class="active">予約</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 予約フォーム -->
+    <section class="reserve-container">
+        <h1>予約フォーム</h1>
+
+        <label>お名前</label>
+        <input type="text" id="name" placeholder="例：山田太郎">
+
+        <label>電話番号</label>
+        <input type="text" id="phone" placeholder="090-1234-5678">
+
+        <label>人数</label>
+        <input type="number" id="people" min="1" max="20" placeholder="例：2">
+
+        <label>日時</label>
+        <input type="text" id="datetime" placeholder="日付と時間を選択">
+
+        <label>ご要望・メッセージ</label>
+        <textarea id="message" rows="4" placeholder="アレルギー、席の希望など"></textarea>
+
+        <button class="reserve-btn" onclick="sendReservation()">予約する</button>
+    </section>
+
+    <!-- 完了ポップアップ -->
+    <div class="popup" id="popup">
+        <div class="popup-box">
+            <h2>予約完了しました</h2>
+            <p>ご来店をお待ちしております。</p>
+            <button onclick="closePopup()">閉じる</button>
+        </div>
+    </div>
+
+    <!-- EmailJS ライブラリ -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <!-- 専用スクリプト -->
+    <script src="main.js"></script>
+    <script src="reservation.js"></script>
+
+</body>
+</html>

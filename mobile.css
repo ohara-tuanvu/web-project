@@ -1,0 +1,495 @@
+/* ===========================
+   モバイル版 – プレミアム和風スタイル
+=========================== */
+@media (max-width: 768px) {
+
+    /* Toàn trang thu nhỏ */
+   body {
+        padding: 0;
+        margin: 0;
+        padding-top: 80px !important; /* giữ header không che nội dung */
+        /* ❌ ĐÃ BỎ scale vì gây mất nút 3 gạch */
+    }
+
+    /* Header luôn nằm trên banner */
+    .header {
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px 20px;
+        z-index: 1000000 !important;
+        background: #000;
+    }
+
+    /* Nút 3 gạch */
+    .menu-toggle {
+        display: block;
+        font-size: 32px;
+        color: white;
+        cursor: pointer;
+
+        position: fixed;
+        right: 20px;
+        top: 20px;
+
+        z-index: 2000000 !important;
+    }
+
+    /* NAV tách khỏi body */
+    .header nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 1500000 !important;
+        transform: none !important;
+    }
+
+    /* ===========================
+       MENU NẰM BÊN PHẢI – ẨN MẶC ĐỊNH
+    ============================ */
+    .header nav ul {
+        display: none; /* KHÔNG dùng !important */
+
+        position: fixed;
+        top: 70px;        /* ngay dưới nút 3 gạch */
+        right: 20px;      /* sát mép phải */
+        width: 180px;
+        padding: 15px 20px;
+
+        background: #111;
+        border: 1px solid #333;
+        border-radius: 8px;
+
+        flex-direction: column;
+        gap: 15px;
+
+        z-index: 999999 !important;
+
+        /* hiệu ứng */
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-10px);
+        transition: all 0.25s ease;
+    }
+
+    /* Khi active → hiện menu */
+    .header nav ul.active {
+        display: flex !important;
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+    }
+
+    .header nav ul li a {
+        font-size: 18px;
+        letter-spacing: 2px;
+        padding: 8px 0;
+        display: block;
+    }
+
+    .logo img {
+        height: 38px;
+    }
+
+    /* Banner luôn nằm dưới menu */
+    #indexBanner,
+    #bannerTrack,
+    .banner-slide {
+        z-index: 1 !important;
+        position: relative !important;
+    }
+
+    #indexBanner {
+        height: 40vh;
+    }
+    /* ===========================
+       ヒーローセクション
+    ============================ */
+    .hero {
+        flex-direction: row;
+        gap: 15px;
+        padding: 20px;
+        height: auto;
+    }
+
+    .hero-left h1,
+    .hero-left p {
+        font-size: 26px;
+        letter-spacing: 4px;
+    }
+
+    .hero-right {
+        height: 220px;
+        background-attachment: scroll;
+    }
+
+    /* ===========================
+       汎用グリッド
+    ============================ */
+    .grid,
+    .signature-grid,
+    .drink-grid,
+    .interior-grid,
+    .review-grid,
+    .staff-grid,
+    .season-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 15px;
+    }
+
+    .card img,
+    .sig-card img,
+    .drink-grid img,
+    .interior-grid img,
+    .season-card img {
+        height: 180px;
+    }
+
+    /* ===========================
+       動画セクション
+    ============================ */
+    .video video {
+        width: 100%;
+        height: 260px;
+        object-fit: cover;
+    }
+
+    /* ===========================
+       予約フォーム
+    ============================ */
+    .reservation-container {
+        width: 90%;
+        margin: auto;
+        padding: 20px;
+    }
+
+    .reservation-container input,
+    .reservation-container select,
+    .reservation-container textarea {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .reservation-btn {
+        width: 100%;
+        padding: 16px;
+        font-size: 18px;
+    }
+
+    /* ===========================
+       ポップアップ
+    ============================ */
+    .popup-box {
+        width: 85%;
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    .popup-box button {
+        width: 100%;
+        padding: 14px;
+        font-size: 16px;
+    }
+
+    /* ===========================
+       浮動ボタン
+    ============================ */
+    .floating-reserve {
+        bottom: 20px;
+        right: 20px;
+        padding: 12px 20px;
+        font-size: 18px;
+    }
+
+    /* ===========================
+       地図
+    ============================ */
+    .map iframe,
+    .washi-map iframe {
+        height: 200px;
+    }
+}
+
+/* ===========================
+   メニューページ – 横スクロール
+=========================== */
+@media (max-width: 768px) {
+
+    .menu-grid {
+        display: flex !important;
+        flex-direction: row;
+        overflow-x: auto;
+        overflow-y: hidden;
+        gap: 12px;
+        padding: 10px 0;
+        width: 100%;
+        scroll-snap-type: x mandatory;
+
+        scrollbar-width: none;
+    }
+    .menu-grid::-webkit-scrollbar {
+        display: none;
+    }
+
+    .menu-grid .card {
+        min-width: 150px;
+        max-width: 150px;
+        flex-shrink: 0;
+        scroll-snap-align: start;
+
+        background: #1a1a1a;
+        padding: 12px;
+        border-radius: 10px;
+        border: 1px solid #333;
+        text-align: center;
+    }
+
+    .menu-grid .card img {
+        width: 100%;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    .menu-grid .card h3 {
+        font-size: 14px;
+        margin: 8px 0 4px;
+        letter-spacing: 1px;
+    }
+
+    .menu-grid .card .price {
+        font-size: 14px;
+        margin-bottom: 4px;
+        color: #c40000;
+    }
+
+    .menu-grid .card .desc {
+        font-size: 12px;
+        opacity: 0.7;
+    }
+}
+
+/* ===========================
+   メニューページ – 5品表示
+=========================== */
+@media (max-width: 768px) {
+
+    .menu-banner {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .menu-banner img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        display: block;
+        max-height: 200px;
+    }
+
+    #menuList {
+        display: grid !important;
+        grid-template-columns: repeat(5, 1fr) !important;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    #menuList .card {
+        background: #1a1a1a;
+        padding: 8px;
+        border-radius: 8px;
+        border: 1px solid #333;
+        text-align: center;
+    }
+
+    #menuList .card img {
+        width: 100%;
+        height: 70px;
+        object-fit: cover;
+        border-radius: 6px;
+    }
+
+    #menuList .card h3 {
+        font-size: 11px;
+        margin: 5px 0 2px;
+        letter-spacing: 0.5px;
+    }
+
+    #menuList .card .price {
+        font-size: 11px;
+        margin-bottom: 2px;
+        color: #c40000;
+    }
+
+    #menuList .card .desc {
+        font-size: 10px;
+        opacity: 0.6;
+    }
+}
+
+/* ===========================
+   お問い合わせページ – モバイル
+=========================== */
+@media (max-width: 768px) {
+
+    body {
+        transform: scale(0.80);
+        transform-origin: top center;
+        width: 130%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .contact-container {
+        width: 85%;
+        margin: 20px auto;
+        padding: 14px 12px;
+
+        background: #111;
+        border-radius: 10px;
+        border: 1px solid #333;
+    }
+
+    .contact-container h1 {
+        font-size: 22px;
+        text-align: center;
+        letter-spacing: 3px;
+        margin-bottom: 10px;
+        color: #c40000;
+    }
+
+    .contact-desc {
+        font-size: 13px;
+        color: #ccc;
+        line-height: 1.6;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .contact-container label {
+        font-size: 12px;
+        margin-bottom: 4px;
+        display: block;
+        color: #ddd;
+    }
+
+    .contact-container input,
+    .contact-container select,
+    .contact-container textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 12px;
+
+        background: #1a1a1a;
+        border: 1px solid #333;
+        border-radius: 6px;
+
+        font-size: 13px;
+        color: white;
+    }
+
+    .contact-container textarea {
+        height: 90px;
+        resize: none;
+    }
+
+    .contact-btn {
+        width: 100%;
+        padding: 10px;
+        font-size: 15px;
+
+        background: #c40000;
+        color: white;
+        border: none;
+        border-radius: 8px;
+
+        letter-spacing: 1px;
+    }
+
+    .contact-info-washi {
+        width: 85%;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .washi-card {
+        background: #111;
+        border-radius: 10px;
+        border: 1px solid #333;
+        padding: 14px 12px;
+        color: #ddd;
+    }
+
+    .washi-card h2 {
+        font-size: 18px;
+        color: #c40000;
+        margin-bottom: 8px;
+    }
+
+    .washi-card p {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .washi-map iframe {
+        width: 100%;
+        height: 200px;
+        border-radius: 10px;
+        border: 1px solid #333;
+        margin-top: 10px;
+    }
+
+    .washi-sns {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .sns-washi-btn {
+        padding: 8px 14px;
+        background: #222;
+        border: 1px solid #444;
+        border-radius: 6px;
+        color: white;
+        font-size: 13px;
+        text-decoration: none;
+    }
+
+    .popup-box {
+        width: 80%;
+        padding: 16px;
+        border-radius: 10px;
+
+        background: #111;
+        border: 1px solid #333;
+        text-align: center;
+    }
+
+    .popup-box h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: #c40000;
+    }
+
+    .popup-box p {
+        font-size: 13px;
+        margin-bottom: 15px;
+        color: #ddd;
+    }
+
+    .popup-box button {
+        width: 100%;
+        padding: 12px;
+        font-size: 15px;
+
+        background: #c40000;
+        color: white;
+        border: none;
+        border-radius: 8px;
+    }
+}

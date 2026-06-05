@@ -1,0 +1,267 @@
+/* ===========================
+   全体設定（GLOBAL）
+=========================== */
+body {
+    margin: 0;
+    background: url("images/bgr.jpg") center/cover no-repeat fixed;
+    background-color: #000;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* 背景の暗いオーバーレイ */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* ===========================
+   ヘッダー（HEADER）
+=========================== */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #000;
+    border-bottom: 2px solid #c40000;
+}
+
+.logo img {
+    height: 45px;
+}
+
+.header-tagline {
+    font-family: 'Yuji Syuku', serif;
+    font-size: 22px;
+    letter-spacing: 4px;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav ul li a.active {
+    color: #c40000;
+}
+
+/* ===========================
+   お問い合わせフォーム（CONTACT FORM）
+=========================== */
+.contact-container {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 30px;
+    background: rgba(0,0,0,0.55);
+    border: 1px solid #444;
+    border-radius: 10px;
+    backdrop-filter: blur(4px);
+}
+
+.contact-container h1 {
+    text-align: center;
+    font-family: 'Yuji Syuku', serif;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+.contact-desc {
+    text-align: center;
+    color: #ccc;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+/* 入力フィールド */
+label {
+    display: block;
+    margin: 15px 0 6px;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    background: #111;
+    border: 1px solid #333;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 15px;
+    transition: 0.25s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #c40000;
+    outline: none;
+}
+
+/* 送信ボタン */
+.contact-btn {
+    width: 100%;
+    margin-top: 25px;
+    padding: 14px;
+    background: #c40000;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Yuji Syuku', serif;
+    letter-spacing: 3px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.contact-btn:hover {
+    background: #e00000;
+}
+
+/* ===========================
+   店舗情報（WASHI INFO）
+=========================== */
+.contact-info-washi {
+    max-width: 700px;
+    margin: 60px auto 100px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* 和紙風カード */
+.washi-card {
+    background: rgba(255, 248, 230, 0.08);
+    border: 1px solid rgba(255, 230, 180, 0.25);
+    border-radius: 12px;
+    padding: 22px 25px;
+    backdrop-filter: blur(3px);
+    box-shadow: 0 0 12px rgba(0,0,0,0.35);
+    position: relative;
+}
+
+/* 和紙の縁（ブラシ風） */
+.washi-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    border: 2px solid rgba(255, 230, 180, 0.15);
+    mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+    padding: 6px;
+}
+
+/* タイトル */
+.washi-card h2 {
+    font-family: 'Yuji Syuku', serif;
+    font-size: 22px;
+    margin-bottom: 12px;
+    letter-spacing: 3px;
+    color: #ffe7c2;
+    border-left: 4px solid #d4a373;
+    padding-left: 10px;
+}
+
+/* テキスト */
+.washi-card p {
+    margin: 6px 0;
+    font-size: 15px;
+    color: #f5e9d3;
+    letter-spacing: 1px;
+}
+
+/* ===========================
+   地図（MAP）
+=========================== */
+.washi-map {
+    margin-top: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 230, 180, 0.25);
+    box-shadow: 0 0 10px rgba(255, 230, 180, 0.15);
+    position: relative;
+}
+
+/* クリック用オーバーレイ */
+.map-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 5;
+    cursor: pointer;
+}
+
+/* iframe 表示のみ（クリック無効） */
+.washi-map iframe {
+    width: 100%;
+    height: 250px;
+    border: 0;
+    pointer-events: none;
+}
+
+/* ===========================
+   SNS リンク
+=========================== */
+.washi-sns {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.sns-washi-btn {
+    padding: 8px 16px;
+    background: rgba(255, 230, 180, 0.15);
+    border: 1px solid rgba(255, 230, 180, 0.25);
+    border-radius: 6px;
+    color: #ffe7c2;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+.sns-washi-btn:hover {
+    background: rgba(255, 230, 180, 0.25);
+    transform: translateY(-2px);
+}
+
+/* ===========================
+   ポップアップ（POPUP）
+=========================== */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.75);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-box {
+    background: #111;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #c40000;
+    text-align: center;
+    width: 80%;
+    max-width: 350px;
+}
