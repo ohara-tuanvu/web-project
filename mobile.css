@@ -603,3 +603,11 @@
         margin-top: 65px !important;
     }
 }
+@media (max-width: 768px) {
+    body.contact-page {
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+        max-width: none !important;
+    }
+}
