@@ -550,4 +550,9 @@
         display: none !important;
     }
 }
+@media (max-width: 768px) {
+    .washi-map a[href^="https://maps.google.com"] {
+        display: none !important;
+    }
+}
 
