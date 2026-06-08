@@ -34,7 +34,7 @@
         width: 100%;
     }
 
-    /* Header luôn nằm trên banner *
+    /* Header luôn nằm trên banner */
 
     /* Nút 3 gạch */
     .menu-toggle {
@@ -348,7 +348,7 @@
 @media (max-width: 768px) {
     .contact-container {
         width: 85%;
-        margin: 20px auto;
+        margin: 70px auto 20px;
         padding: 14px 12px;
 
         background: #111;
@@ -556,6 +556,18 @@
 @media (max-width: 768px) {
     .washi-map a[href^="https://maps.google.com"] {
         display: none !important;
+    }
+}
+@media (max-width: 768px) {
+    h1, .page-title, .reservation-title {
+        margin-top: 30px !important;
+        display: block;
+        
+    }
+}
+@media (max-width: 768px) {
+    .menu-banner {
+        margin-top: 65px !important;
     }
 }
 
