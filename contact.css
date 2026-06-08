@@ -32,6 +32,9 @@ body::before {
     background: #000;
     border-bottom: 2px solid #c40000;
 }
+.menu-toggle {
+    display: none;
+}
 
 .logo img {
     height: 45px;
