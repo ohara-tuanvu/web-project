@@ -500,4 +500,15 @@
         max-width: 100% !important;
         overflow-x: hidden !important;
     }
+    @media (max-width: 768px) {
+    html, body {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+        margin: 0;
+        padding: 0;
+        transform: none !important;
+    }
+}
+
 }
