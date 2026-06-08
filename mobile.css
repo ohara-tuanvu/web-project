@@ -1,6 +1,28 @@
 /* ===========================
    モバイル版 – プレミアム和風スタイル
 =========================== */
+
+/* ===========================
+   RESET CHỐNG LỆCH TRANG MOBILE
+=========================== */
+@media (max-width: 768px) {
+
+    html, body {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        transform: none !important;
+    }
+
+    * {
+        box-sizing: border-box !important;
+        max-width: 100% !important;
+    }
+}
+
+
 @media (max-width: 768px) {
 
     /* Toàn trang thu nhỏ */
