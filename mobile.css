@@ -29,21 +29,12 @@
    body {
         margin: 0;
         padding: 0;
-        padding-top: 80px;
+        padding-top: 60px;
         overflow-x: hidden;
         width: 100%;
     }
 
-    /* Header luôn nằm trên banner */
-    .header {
-        position: fixed !important;
-        top: 0;
-        left: 0;
-        width: 100%;
-        padding: 10px 20px;
-        z-index: 1000000 !important;
-        background: #000;
-    }
+    /* Header luôn nằm trên banner *
 
     /* Nút 3 gạch */
     .menu-toggle {
@@ -355,16 +346,6 @@
    お問い合わせページ – モバイル
 =========================== */
 @media (max-width: 768px) {
-
-    body {
-        transform: scale(0.80);
-        transform-origin: top center;
-        width: 130%;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-    }
-
     .contact-container {
         width: 85%;
         margin: 20px auto;
