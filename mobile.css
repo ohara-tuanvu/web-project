@@ -646,3 +646,9 @@
         display: none;
     }
 }
+@media (max-width: 768px) {
+    .season-card img {
+        height: 140px !important;
+        object-fit: cover !important;
+    }
+}
