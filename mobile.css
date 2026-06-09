@@ -611,14 +611,13 @@
         max-width: none !important;
     }
 }
-/* ⭐ Bong bóng Yoyaku nổi góc dưới bên phải */
 .yoyaku-bubble {
     position: fixed;
     bottom: 20px;
     right: 20px;
     width: 65px;
     height: 65px;
-    background: #b30000; /* đỏ Nhật */
+    background: #b30000;
     color: #fff;
     border-radius: 50%;
     display: flex;
@@ -634,13 +633,11 @@
     transition: transform 0.2s, background 0.2s;
 }
 
-/* Hover (nếu user chạm giữ) */
 .yoyaku-bubble:active {
     transform: scale(1.05);
     background: #8a0000;
 }
 
-/* Chỉ hiện trên mobile */
 @media (min-width: 769px) {
     .yoyaku-bubble {
         display: none;
@@ -648,7 +645,15 @@
 }
 @media (max-width: 768px) {
     .season-card img {
-        height: 140px !important;
+        width: 60% !important;
+        height: auto !important;
+        margin: 0 auto 10px !important;
+        display: block;
+    }
+}
+@media (max-width: 768px) {
+    .best-seller .card img {
+        height: 180px !important;
         object-fit: cover !important;
     }
 }
