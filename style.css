@@ -186,13 +186,6 @@ nav ul li a {
     transform: translateY(-5px);
 }
 
-/* ===========================
-   人気メニュー
-=========================== */
-.best-seller {
-    padding: 60px;
-    text-align: center;
-}
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -215,10 +208,11 @@ nav ul li a {
 =========================== */
 .card img {
     width: 100%;
-    height: 180px;
+    height: 260px;
     object-fit: cover;
     border-radius: 10px;
 }
+
 
 /* ===========================
    内観 / 看板料理 / ドリンク
@@ -642,3 +636,7 @@ nav ul li a {
     pointer-events: none;
 }
 
+.best-seller .sig-card img {
+    height: 260px !important;
+    object-fit: cover !important;
+}
