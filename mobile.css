@@ -611,3 +611,38 @@
         max-width: none !important;
     }
 }
+/* ⭐ Bong bóng Yoyaku nổi góc dưới bên phải */
+.yoyaku-bubble {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 65px;
+    height: 65px;
+    background: #b30000; /* đỏ Nhật */
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.35);
+    z-index: 99999;
+    border: 2px solid #fff;
+    font-family: "Yuji Syuku", serif;
+    transition: transform 0.2s, background 0.2s;
+}
+
+/* Hover (nếu user chạm giữ) */
+.yoyaku-bubble:active {
+    transform: scale(1.05);
+    background: #8a0000;
+}
+
+/* Chỉ hiện trên mobile */
+@media (min-width: 769px) {
+    .yoyaku-bubble {
+        display: none;
+    }
+}
