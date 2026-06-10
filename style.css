@@ -640,3 +640,6 @@ nav ul li a {
     height: 260px !important;
     object-fit: cover !important;
 }
+.yoyaku-bubble {
+    display: none;
+}
